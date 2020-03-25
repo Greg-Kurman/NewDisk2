@@ -1,0 +1,108 @@
+@charset "UTF-8";
+* {
+  font-family: Verdana, serif;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header__marker {
+  display: inline-block;
+  width: 12px;
+  height: 20px;
+  background-color: #104e99;
+}
+.header__title {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 20px;
+  line-height: 67px;
+}
+
+.content {
+  padding: 10px;
+  display: flex;
+  border: 3px solid #f0f0f0;
+}
+.content__nav {
+  flex: 0 0 39%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content__btn {
+  width: 100%;
+  height: 95px;
+  background-color: #f0f0f0;
+  margin: 0 0 10px;
+}
+.content__btn:last-child {
+  margin: 0 0 0 0;
+}
+.content__btn:hover, .content__btn:focus {
+  background-color: #cccccc;
+}
+.content__link {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #000;
+  text-justify: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content__link:active {
+  background-color: #cccccc;
+}
+.content__img {
+  padding: 0 0 0 10px;
+  flex: 0 0 57%;
+  width: 100%;
+}
+.content__img img {
+  object-fit: none;
+  object-position: center;
+}
+.content__text {
+  margin: 10px 0 0 10px;
+}
+.content__item {
+  display: none;
+  /* Включается нужный текст */
+}
+.content__item:target {
+  display: block;
+}
+.content__info:target .content__item6 {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .content__img {
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .content__nav {
+    display: none;
+  }
+
+  .content__item {
+    display: block;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .header__title {
+    font-size: 14px;
+  }
+}
