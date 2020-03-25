@@ -6,8 +6,9 @@
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header__marker {
@@ -17,6 +18,7 @@
   background-color: #104e99;
 }
 .header__title {
+  margin-left: 12px;
   display: inline-block;
   text-transform: uppercase;
   color: #000;
